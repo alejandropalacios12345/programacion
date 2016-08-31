@@ -1,0 +1,15 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main() {
+   float Radio,Area;
+   cout<<"ingresar Radio:";
+	cin>>Radio;
+	Area=3.141516*Radio*Radio;
+    cout<<"El area de una circunferencia es: "<<Area;
+   getch();
+}
