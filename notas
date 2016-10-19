@@ -1,0 +1,43 @@
+// dfoldf.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+	int registro,falta,cont=0;
+	float p1,p2,pp,ef,notafinal,faltas,final,promedio=0;
+	cout<<"ingrese registro";
+	cin>>registro;
+	while(registro=-999)
+	{
+		cout<<"ingrese p1: ";
+		cin>>p1;
+		cout<<"ingrese p2: ";
+		cin>>p2;
+		cout<<"ingrese pp: ";
+		cin>>pp;
+		cout<<"ingrese ef: ";
+		cin>>ef;
+		cout<<"ingrese faltas: ";
+		cin>>faltas;
+		
+	if(faltas>10)
+			final=0;
+		notafinal=((p1+p2)/2)*0.4+(pp*0.2)+(ef*0.1);
+		cout<<registro<<" "<<notafinal<<" ";
+		
+	if(notafinal>=51)
+			cout<<"aprobado";
+		else cout<<"reprobado";
+		cout<<"ingrese registro";
+		cin>>registro;
+		promedio=promedio+notafinal;
+		cont++;
+	}
+	cout<<"el promedio: "<<promedio/cont;
+	getch();
+	
+}
