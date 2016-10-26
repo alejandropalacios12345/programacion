@@ -1,0 +1,73 @@
+// erg.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+float fsuma(float a,float b);
+float fresta(float a,float b);
+float fmultiplicacion(float a,float b);
+float fdivision(float a,float b);
+
+void main()
+{
+	float a,b,suma,resta,multiplicacion,division;
+	int opcion;
+	//validacion de entrada
+	do{
+	cout<<"Ingrese  a";
+	cin>>a;
+	cout<<"Ingrese b";
+	}while(a>=0);
+	cout<<"       MENU ";
+	cout<<"1.-Suma";
+	cout<<"2.-Resta";
+	cout<<"3.-multiplicacion";
+	cout<<"4.-Division";
+	cin>>opcion;
+	
+	switch(opcion){
+	case 1:suma=fsuma(a,b);
+		break;
+	case 2:resta=fresta(a,b);
+		break;
+	case 3:multiplicacion=fmultiplicacion(a,b);
+		break;
+	case 4:division=fdivision(a,b);
+		break;
+	case 0:cout<<"salir";
+		break;
+
+   getch();
+	}
+}while(opcion);
+ 
+float fsuma(float a,float b)
+{
+	float r;
+	r=a+b;
+	return r;
+}
+float fresta(float a,float b)
+{
+	float r;
+	r=a-b;
+	return r;
+}
+float fmultiplicacion(float a,float b)
+{
+	float r;
+	r=a*b;
+	return r;
+}
+float fdivisor(float a,float b)
+{ 
+	float r;
+	r=a/b;
+	return r;
+  
+
+
+
