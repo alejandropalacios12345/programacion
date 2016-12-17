@@ -1,0 +1,66 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100;
+
+using namespace std;
+
+int maquinaria();
+int herramientas();
+int abono();
+
+void main();
+{
+	int M,H,A,Q,N,P,opcion;
+
+	cout<<"-------Menu-------"<<endl;
+	cout<<"1.- Maquinaria"<<endl;
+	cout<<"2.- Herramientas"<<endl;
+	cout<<"3.- Abono"<<endl;
+	cout<<"4.- Salir"<<endl;
+	cin>> opcion;
+
+	switch (opcion)
+	{
+	case 1: (Maquinaria());
+
+		break;
+	
+	case 2:(Herramientas());
+
+		break;
+     
+     case 3: (Abono());
+
+
+}
+
+int Maquinaria()
+{
+	cout<<"Tractores"<<endl;
+	cout<<"Cosechadora"<<endl;
+	cout<<"Motocultor"<<endl;
+	cout<<"Abonadora"<<endl;
+	cout<<"Trituradora"<<endl;
+	cout<<"Aplanadora"<<endl;
+	cout<<"Fertilizador"<<endl;
+}
+
+int Herramientas()
+{
+	cout<<"Machetes"<<endl;
+	cout<<"Guadaña"<<endl;
+	cout<<"Hoces"<<endl;
+	cout<<"Palas"<<endl;
+	cout<<"Azada"<<endl;
+	cout<<"Horcas"<<endl;
+	cout<<"Rastrillos"<<endl;
+}
+
+int Abono()
+{
+	cout<<"Abono simple"<<endl;
+	cout<<"Abono complejo"<<endl;
+	cout<<"Abono organico"<<endl;
+	cout<<"Abono inorganico"<<endl;
+}
