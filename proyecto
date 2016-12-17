@@ -1,0 +1,231 @@
+// proyecto.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include<stdio.h>
+#define MAX 100
+
+using namespace std;
+
+int Maquinaria();
+int Herramientas();
+int Abono();
+
+int Maquinaria()
+{
+	int opcion,n;
+	
+	do{
+	system("cls");
+	cout<<"--Inventario de Maquinaria--"<<endl;
+	cout<<"1.-Tractores"<<endl;
+	cout<<"2.-Cosechadora"<<endl;
+	cout<<"3.-Motocultor"<<endl;
+	cout<<"4.-Abonadora"<<endl;
+	cout<<"5.-Volver al menu principal"<<endl;
+
+    cin>>opcion;
+	switch (opcion)
+	{
+	case 1: 
+		system("cls");
+		cout<<"Hay 12 tractores"<<endl;
+		cout<<"precio en dolares 32.299 $"<<endl;
+		cout<<"precio en Bs 222.541 BS"<<endl;
+		cin>>n;
+	    break;
+	
+	case 2:
+		system("cls");
+		cout<<"Hay 10 cosechadora"<<endl;
+		cout<<"precio en dolares 51.053 $"<<endl;
+		cout<<"precio en Bs 351.759 BS"<<endl;
+		cin>>n;
+		break;
+     
+    case 3: 
+        system("cls");
+		cout<<"Hay 14 motocultor"<<endl;
+		cout<<"precio en dolares 12.503 $"<<endl;
+		cout<<"precio en Bs 86.145 BS"<<endl;
+		cin>>n;
+		break;
+
+	case 4: 
+		system("cls");
+		cout<<"Hay 15 abonadoras"<<endl;
+		cout<<"precio en dolares 3.647 $"<<endl;
+		cout<<"precio en Bs 26.182 BS"<<endl;
+		cin>>n;
+		break;
+	case 5:
+		
+		break;
+	
+	default:
+		system("cls");
+		cout << "Opcion no valida.\a\n";
+		break;
+	 }
+ 
+   }while(opcion !=5);
+return 0;
+}
+int Herramientas()
+{
+	int opcion,n;
+	do{
+	system("cls");
+	cout<<"--Inventario de Herramientas--"<<endl;
+	cout<<"1.-Machetes"<<endl;
+	cout<<"2.-Guadaña"<<endl;
+	cout<<"3.-Hoces"<<endl;
+	cout<<"4.-Palas"<<endl;
+	cout<<"5.-Volver al menu principal"<<endl;
+    cin>>opcion;
+	switch (opcion)
+	{
+	case 1: 
+		system("cls");
+		cout<<"Hay 12 Machetes"<<endl;
+		cout<<"precio en dolares 5 $"<<endl;
+		cout<<"precio en Bs 35 BS"<<endl;
+		cin>>n;
+		break;
+	
+	case 2:
+		system("cls");
+		cout<<"Hay 23 Guadañas"<<endl;
+		cout<<"precio en dolares 6 $"<<endl;
+		cout<<"precio en Bs 41 BS"<<endl;
+		cin>>n;
+		break;
+     
+    case 3:
+
+		system("cls");
+		cout<<"Hay 20 Hoces"<<endl;
+		cout<<"precio en dolares 6 $"<<endl;
+		cout<<"precio en Bs 41 BS"<<endl;
+		cin>>n;
+		break;
+
+	case 4: 
+		system("cls");
+		cout<<"Hay 5 Palas";
+		cout<<"precio en dolares 6 $"<<endl;
+		cout<<"precio en Bs 41 BS"<<endl;
+		cin>>n;
+		break;
+	case 5:
+		break;
+	
+	default:
+		system("cls");
+		cout << "Opcion no valida.\a\n";
+	 }
+	
+  }while(opcion !=5);
+return 0;
+}
+int Abono()
+{
+	int opcion,n;
+	do{
+	system("cls");
+	cout<<"--Inventario de Abono--"<<endl;
+	cout<<"1.-Abono simple"<<endl;
+	cout<<"2.-Abono complejo"<<endl;
+	cout<<"3.-Abono organico"<<endl;
+	cout<<"4.-Abono inorganico"<<endl;
+    cout<<"5.-Volver al menu principal"<<endl;
+	cin>>opcion;
+	switch (opcion)
+	{
+	case 1:
+		system("cls");
+		cout<<"Hay 10 Abono simple"<<endl;
+		cout<<"precio en dolares 10 $"<<endl;
+		cout<<"precio en Bs 70 BS"<<endl;
+		cin>>n;
+		break;
+	
+	case 2:
+		system("cls");
+		cout<<"Hay 5 Abono complejo"<<endl;
+		cout<<"precio en dolares 11 $"<<endl;
+		cout<<"precio en Bs 76 BS"<<endl;
+		cin>>n;
+		break;
+     
+    case 3: 
+		system("cls");
+		cout<<"Hay 15 Abono organico"<<endl;
+		cout<<"precio en dolares 15 $"<<endl;
+		cout<<"precio en Bs 104 BS"<<endl;
+		cin>>n;
+		break;
+
+	case 4: 
+		system("cls");
+		cout<<"Hay 6 Abono inorganico"<<endl;
+		cout<<"precio en dolares 10 $"<<endl;
+		cout<<"precio en Bs 79 BS"<<endl;
+		cin>>n;
+		break;
+	case 5:
+		break;
+	
+	default:
+		system("cls");
+		cout << "Opcion no valida.\a\n";
+	 }
+
+ }while(opcion !=5);
+return 0;
+}
+void main()
+{	
+	system ("color 2""F");
+
+	int opcion;
+	do{
+    system("cls");
+	cout<<"----Inventario General----"<<endl;
+	cout<<"1.- Maquinaria"<<endl;
+	cout<<"2.- Herramientas"<<endl;
+	cout<<"3.- Abono"<<endl;
+	cout<<"4.- Salir"<<endl;
+
+	cin>> opcion;
+
+	switch (opcion)
+	{
+	case 1: (Maquinaria());
+
+		break;
+	
+	case 2:(Herramientas());
+
+		break;
+     
+    case 3: (Abono());
+
+		break;
+
+	case 4: 
+		
+		break;
+		
+	default:
+		system("cls");
+		cout << "Opcion no valida.\a\n";
+	 }
+	
+	}while (opcion != 4); 
+		
+ 
+}
+	
